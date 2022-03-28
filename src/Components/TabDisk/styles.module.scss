@@ -1,0 +1,39 @@
+.tabDisk {
+  @apply absolute 
+  top-[-60%] 
+  left-0 
+  aspect-square 
+  rounded-full 
+  border-8 
+  w-[112px] 
+  border-purply-gray 
+  bg-light-green 
+  justify-start 
+  after:absolute
+  before:absolute;
+  &::after,
+  &::before {
+    @apply border-purply-gray;
+    position: absolute;
+    top: 43.9px;
+    width: 15px;
+    height: 15px;
+    border-style: solid;
+    box-sizing: content-box;
+    border-width: 6px;
+    border-bottom: 0;
+    background-color: white;
+  }
+
+  &::after {
+    left: -21px;
+    border-top-right-radius: 9999px;
+    border-left: 0;
+  }
+
+  &::before {
+    right: -21px;
+    border-top-left-radius: 999px;
+    border-right: 0;
+  }
+}

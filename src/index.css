@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply bg-purply-gray
+}
+
+#root {
+    min-height: 100vh;
+    min-width : 100vw;
+    @apply flex items-center justify-center
+}
